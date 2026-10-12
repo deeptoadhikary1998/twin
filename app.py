@@ -9,7 +9,7 @@ load_dotenv(override=True)
 
 MODEL_NAME = "deepseek-chat"
 
-openai = OpenAI(base_url=os.getenv("DEEPSEEK_BASE_URL"), api_key=os.getenv("DEEPSEEK_API_KEY")
+openai = OpenAI(base_url=os.getenv("DEEPSEEK_BASE_URL"),api_key=os.getenv("DEEPSEEK_API_KEY"))
 
 system = [{"role": "system", "content": TWIN_SYSTEM_PROMPT}]
 
